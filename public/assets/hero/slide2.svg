@@ -1,0 +1,36 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="1920" height="1080" fill="#0f0f0f"/>
+  
+  <!-- Gradient overlay -->
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B4049;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#0f0f0f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#grad2)"/>
+  
+  <!-- Wine barrels -->
+  <g transform="translate(1100, 400)" opacity="0.25">
+    <ellipse cx="100" cy="150" rx="100" ry="40" fill="#8B4049"/>
+    <rect x="0" y="150" width="200" height="300" fill="#722F37"/>
+    <ellipse cx="100" cy="450" rx="100" ry="40" fill="#5a2228"/>
+  </g>
+  
+  <!-- Wine bottle -->
+  <g transform="translate(1300, 250)" opacity="0.3">
+    <path d="M100 30 L100 60 L95 75 L95 300 C95 310 98 320 105 325 L145 325 C152 320 155 310 155 300 L155 75 L150 60 L150 30 Z" fill="#f5f5f5"/>
+    <rect x="115" y="15" width="20" height="20" rx="3" fill="#f5f5f5"/>
+  </g>
+  
+  <!-- Legendary Vintages text -->
+  <text x="960" y="540" font-family="serif" font-size="48" fill="#D4AF37" text-anchor="middle" font-weight="bold">
+    LEGENDARY VINTAGES
+  </text>
+  
+  <!-- Slide 2 indicator -->
+  <text x="960" y="950" font-family="sans-serif" font-size="24" fill="#f5f5f5" text-anchor="middle" opacity="0.5">
+    Slide 2: Replace with wine cellar image
+  </text>
+</svg>

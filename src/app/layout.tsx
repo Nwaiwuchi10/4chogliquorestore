@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Premium Wine Distribution | WineApp",
+    title: " 4CHOG Liquors",
     description: "Elevating the art of wine distribution with curated selections from the world's finest vineyards.",
 };
 

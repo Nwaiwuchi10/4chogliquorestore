@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img1 from "../../public/assets/hero/p1.jpg";
+import img1 from "../../public/assets/hero/shop2.jpg";
 import img2 from "../../public/assets/hero/p2.jpg";
 import img3 from "../../public/assets/hero/p3.jpg";
 

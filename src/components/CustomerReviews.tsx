@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import bg from "../../public/assets/hero/bg1.png";
-import img1 from "../../public/assets/hero/t1.png";
-import img2 from "../../public/assets/hero/t2.png";
-import img3 from "../../public/assets/hero/t3.png";
-import img4 from "../../public/assets/hero/t2.png";
+import img1 from "../../public/assets/hero/test1.jpg";
+import img2 from "../../public/assets/hero/test2.jpeg";
+import img3 from "../../public/assets/hero/test3.jpg";
+import img4 from "../../public/assets/hero/test4.webp";
 const reviews = [
     {
         name: "Anna Williams",
@@ -15,7 +15,7 @@ const reviews = [
         image: img1,
     },
     {
-        name: "Michael Stone",
+        name: "Jennifer Ugwumba",
         role: "Sommelier",
         text: "Modern, elegant, and eyecatching wines",
         image: img2,
@@ -27,7 +27,7 @@ const reviews = [
         image: img3,
     },
     {
-        name: "Daniel Reed",
+        name: "Daniela Reed",
         role: "Restaurant Owner",
         text: "Their wine collection elevated our restaurant experience completely. Highly recommended.",
         image: img4,

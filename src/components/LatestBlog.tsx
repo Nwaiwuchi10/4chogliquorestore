@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import b1 from "../../public/assets/hero/b1.jpg";
+import b1 from "../../public/assets/hero/lum.png";
 import b2 from "../../public/assets/hero/b2.jpg";
-import b3 from "../../public/assets/hero/b3.jpg";
+import b3 from "../../public/assets/hero/wbg1.jpg";
 
 export default function LatestBlogSection() {
     return (

@@ -2,7 +2,7 @@ import Image from "next/image";
 import vineyardImg from "../../public/assets/hero/vineyard.png";
 export default function About() {
     return (
-        <section id="story" className="py-24 px-4 sm:px-6 lg:px-8 bg-bg-darker relative overflow-hidden">
+        <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 bg-bg-darker relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-wine-primary/10 to-transparent"></div>
 
@@ -21,15 +21,17 @@ export default function About() {
                         </h2>
 
                         <p className="text-text-light/80 text-lg leading-relaxed">
-                            Since 1968, we have been at the forefront of fine wine distribution,
-                            building relationships with the world&apos;s most esteemed vineyards and
-                            bringing their exceptional creations to discerning establishments across the globe.
+                            4CHOG Liquors is a distinguished retailer of premium
+                            imported wines and spirits, strategically located in the
+                            heart of Owerri, Imo State. Established in 2022, the brand
+                            was founded with a clear purpose: to redefine luxury
+                            liquor retail by offering only authentic, world-class
+                            alcoholic beverages to a refined clientele.
                         </p>
 
                         <p className="text-text-light/80 leading-relaxed">
-                            Our expertise spans from rare vintage Bordeaux to emerging boutique labels,
-                            ensuring every bottle in our collection meets the highest standards of quality
-                            and craftsmanship. We don&apos;t just distribute wine—we curate experiences.
+                            At 4CHOG Liquors, every bottle represents quality,
+                            prestige, and a commitment to excellence.
                         </p>
 
                         {/* Stats */}
@@ -39,11 +41,11 @@ export default function About() {
                                 <div className="text-sm text-text-light/60 mt-1">Wineries</div>
                             </div>
                             <div className="text-center border-x border-wine-primary/30">
-                                <div className="text-3xl font-serif font-bold text-wine-accent">50+</div>
-                                <div className="text-sm text-text-light/60 mt-1">Countries</div>
+                                <div className="text-3xl font-serif font-bold text-wine-accent">1000+</div>
+                                <div className="text-sm text-text-light/60 mt-1">Clients</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl font-serif font-bold text-wine-accent">55</div>
+                                <div className="text-3xl font-serif font-bold text-wine-accent">4</div>
                                 <div className="text-sm text-text-light/60 mt-1">Years</div>
                             </div>
                         </div>

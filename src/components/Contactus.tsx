@@ -1,10 +1,42 @@
 "use client";
 
 import { MessageSquare } from "lucide-react";
+import { useState, useRef } from "react";
 
 const ContactUsSection = () => {
+    const [message, setMessage] = useState("");
+    const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+
+    // Auto-expand textarea
+    const handleInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        setMessage(e.target.value);
+        if (textareaRef.current) {
+            textareaRef.current.style.height = "auto";
+            textareaRef.current.style.height = textareaRef.current.scrollHeight + "px";
+        }
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if (!message.trim()) return;
+
+        const email = "4chogliquorstore@gmail.com";
+        const subject = encodeURIComponent("New Contact Message");
+        const body = encodeURIComponent(message);
+
+        // Open email client
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+
+        // Reset
+        setMessage("");
+        if (textareaRef.current) {
+            textareaRef.current.style.height = "auto";
+        }
+    };
+
     return (
-        <section className="w-full overflow-x-hidden">
+        <section id="contact" className="w-full overflow-x-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[180px] w-full">
 
                 {/* Left Content */}
@@ -23,12 +55,15 @@ const ContactUsSection = () => {
                 <div className="bg-[#6a0f2e] flex items-center px-4 sm:px-6 lg:px-16 py-10 w-full">
                     <form
                         className="flex flex-col sm:flex-row w-full max-w-xl gap-3"
-                        onSubmit={(e) => e.preventDefault()}
+                        onSubmit={handleSubmit}
                     >
-                        <input
-                            type="text"
+                        <textarea
+                            ref={textareaRef}
+                            value={message}
+                            onChange={handleInput}
                             placeholder="Your message..."
-                            className="w-full bg-black text-white px-4 py-3 text-sm
+                            rows={1}
+                            className="w-full resize-none overflow-hidden bg-black text-white px-4 py-3 text-sm
               placeholder-gray-400 outline-none rounded"
                         />
 

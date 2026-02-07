@@ -20,22 +20,26 @@ const HandPickedSection = () => {
             <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12">
                 <div className="max-w-xl ml-auto text-center lg:text-left text-white">
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold">
-                        Hand-Picked
+                        OUR MISSION
                     </h2>
 
-                    <p className="text-2xl sm:text-3xl lg:text-4xl font-light mt-2">
-                        Collection
-                    </p>
 
                     <p className="mt-4 text-wine-accent tracking-wide text-lg">
                         Save More, Pour More
                     </p>
 
                     <p className="mt-6 text-sm sm:text-base text-gray-200 leading-relaxed">
-                        This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Ad rerum repudiandae ipsa? Tempore modi quisquam velit nostrum
-                        nulla veritatis tempora quaerat eligendi porro, quos aperiam.
-                        Ea molestias placeat consequuntur fuga.
+                        • To provide access to original, premium
+                        imported wines and spirits while delivering a
+                        refined customer experience built on trust,
+                        quality, and professionalism.
+                    </p>
+
+                    <p className="mt-6 text-sm sm:text-base text-gray-200 leading-relaxed">
+                        • To become a leading luxury liquor brand in
+                        Imo State and Nigeria at large, recognized for
+                        authenticity, sophistication, and exceptional
+                        service.
                     </p>
 
                     {/* CTA */}

@@ -2,17 +2,18 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination, Navigation } from "swiper/modules";
-
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import whatsapp from "../../public/assets/hero/whatsapp.png"
 
 const slides = [
     {
         subtitle: "The Best Collections 2025",
         title: "AMAZING\nWINESHOP",
-        button: "Shop Now",
+        button: "Contact Us Now",
         image: "/assets/hero/wbg2.jpg",
         accent: "text-wine-accent"
     },
@@ -25,7 +26,7 @@ const slides = [
     },
     {
         subtitle: "Exclusive Selection",
-        title: "FINE\nCOLLECTIONS",
+        title: "WINE\nCOLLECTIONS",
         button: "View More",
         image: "/assets/hero/wbg2.jpg",
         accent: "text-wine-secondary"
@@ -33,6 +34,11 @@ const slides = [
 ];
 
 export default function HeroSwiper() {
+    const phoneNumber = "09028219263";
+    const WhatsappClick = () => {
+        const url = `https://wa.me/${phoneNumber}`;
+        window.open(url, "_blank");
+    };
     return (
         <section className="relative h-screen w-full overflow-hidden bg-bg-darker">
             <Swiper
@@ -81,7 +87,7 @@ export default function HeroSwiper() {
                                     </div>
 
                                     {/* Main Title */}
-                                    <h1 className="text-white text-5xl md:text-5xl xl:text-6xl font-serif font-bold leading-tight whitespace-pre-line drop-shadow-2xl">
+                                    <h1 className="text-white text-4xl md:text-4xl xl:text-6xl font-serif font-bold leading-tight whitespace-pre-line drop-shadow-2xl">
                                         {slide.title.split('\n')[0]}
                                         <span className={`block ${slide.accent} italic`}>
                                             {slide.title.split('\n')[1]}
@@ -92,14 +98,16 @@ export default function HeroSwiper() {
                                     <p className="text-gray-300 text-lg md:text-xl max-w-lg font-lighter leading-relaxed border-l-2 border-white/20 pl-6">
                                         Experience the finest curation of premium vintages and rare spirits, delivered with elegance.
                                     </p>
-
+                                    <p className="text-gray-300 text-lg md:text-xl max-w-lg font-lighter  pl-6">Retail &
+                                        Distribution Of Imported Wines And
+                                        Spirits</p>
                                     {/* Buttons */}
                                     <div className="flex flex-wrap gap-4 pt-4">
                                         <button className="px-8 py-4 bg-wine-primary hover:bg-wine-secondary text-white transition-all duration-300 rounded-sm font-medium tracking-wide border border-transparent hover:border-wine-accent/50 shadow-lg hover:shadow-wine-primary/40 uppercase text-sm">
-                                            {slide.button}
+                                            <a href="#contact"> {slide.button}</a>
                                         </button>
                                         <button className="px-8 py-4 bg-transparent border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 rounded-sm font-medium tracking-wide uppercase text-sm backdrop-blur-sm">
-                                            Our Story
+                                            <a href="#about" className="decoration-none">Our Story</a>
                                         </button>
                                     </div>
                                 </div>
@@ -107,6 +115,9 @@ export default function HeroSwiper() {
                         </div>
                     </SwiperSlide>
                 ))}
+
+
+
 
                 {/* Custom Navigation Buttons */}
                 <div className="absolute bottom-12 right-12 z-20 flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -118,7 +129,21 @@ export default function HeroSwiper() {
                     </button>
                 </div>
             </Swiper>
-
+            <div className="fixed z-[1000] bottom-6 right-6 sm:bottom-8 sm:right-8 cursor-pointer">
+                <div
+                    onClick={WhatsappClick}
+                    className="w-[60px] h-[60px] rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+                >
+                    <Image
+                        src={whatsapp}
+                        alt="whatsapp"
+                        width={60}
+                        height={60}
+                        className="w-full h-full object-cover"
+                        priority
+                    />
+                </div>
+            </div>
             {/* Scroll Indicator */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 animate-bounce hidden md:block">
                 <svg className="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">

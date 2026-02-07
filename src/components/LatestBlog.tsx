@@ -7,7 +7,7 @@ import b3 from "../../public/assets/hero/b3.jpg";
 
 export default function LatestBlogSection() {
     return (
-        <section className="w-full bg-black text-white py-16 px-4 md:px-10">
+        <section id="blogs" className="w-full bg-black text-white py-16 px-4 md:px-10">
             <div className="max-w-7xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
@@ -37,22 +37,29 @@ export default function LatestBlogSection() {
 
                         {/* Content */}
                         <div className="absolute bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                            <h3 className="text-xl font-semibold">New Wine Shop in your area</h3>
-                            <p className="text-sm text-gray-300 mt-1">August 26, 2021</p>
+                            <h3 className="text-xl font-semibold">Commitment To Responsibility</h3>
+                            <p className="text-sm text-gray-300 mt-1">Bold, refined, and
+                                trustworthy</p>
                             <p className="text-sm text-gray-300 mt-3 leading-relaxed">
-                                This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quisquam minus in commodi illo laboriosam autem.
+                                4CHOG Liquors upholds a strong commitment
+                                to responsible alcohol consumption and full
+                                compliance with all legal and regulatory
+                                standards across the global alcohol industry,
+                                ensuring every bottle is securely sealed and
+                                protected for safe enjoyment.
                             </p>
                         </div>
                     </div>
 
                     {/* Center Card */}
                     <div className="bg-black/80 p-6 flex flex-col justify-center">
-                        <h3 className="text-xl font-semibold">Jack Daniels are one of the best</h3>
-                        <p className="text-sm text-gray-400 mt-2">August 26, 2021</p>
+                        <h3 className="text-xl font-semibold">Collaborative Marketing Initiatives</h3>
+                        <p className="text-sm text-gray-400 mt-2">Bold, refined, and
+                            trustworthy</p>
                         <p className="text-sm text-gray-300 mt-4 leading-relaxed">
-                            This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Quisquam minus in commodi illo laboriosam autem.
+                            Co-branding efforts and promotional
+                            activations boosted overall brand visibility and
+                            generated incremental regional sales.
                         </p>
                         <button className="mt-6 text-yellow-400 text-sm font-semibold hover:underline w-fit">
                             Read More
@@ -70,11 +77,13 @@ export default function LatestBlogSection() {
                         />
                         <div className="absolute inset-0 bg-black/40" />
                         <div className="absolute bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                            <h3 className="text-xl font-semibold">New Wine Shop in your area</h3>
-                            <p className="text-sm text-gray-300 mt-1">August 26, 2021</p>
+                            <h3 className="text-xl font-semibold">Expanded Brand Presence</h3>
+                            <p className="text-sm text-gray-300 mt-1">Bold, refined, and
+                                trustworthy</p>
                             <p className="text-sm text-gray-300 mt-3 leading-relaxed">
-                                This is Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Quisquam minus in commodi illo laboriosam autem.
+                                Strategic partnerships with premium retail
+                                outlets and high-end bars significantly
+                                broadened brand availability
                             </p>
                             <button className="mt-4 text-yellow-400 text-sm font-semibold hover:underline">
                                 Read More

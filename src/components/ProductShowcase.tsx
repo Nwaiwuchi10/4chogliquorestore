@@ -112,18 +112,18 @@ export default function ProductShowcase() {
                         </div>
 
                         {/* Text Content */}
-                        <div className="text-center mt-6">
+                        {/* <div className="text-center mt-6">
                             <h3 className="text-white text-lg font-light mb-2">
                                 {product.name}
                             </h3>
 
-                            {/* <div className="flex justify-center gap-3 items-center">
+                            <div className="flex justify-center gap-3 items-center">
                                 <span className="text-[#f5a623] font-semibold">
                                     {product.price}
                                 </span>
 
-                        </div> */}
                         </div>
+                        </div> */}
                     </div>
                 ))}
             </div>

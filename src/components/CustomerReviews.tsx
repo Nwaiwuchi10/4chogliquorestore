@@ -11,13 +11,13 @@ const reviews = [
     {
         name: "Anna Williams",
         role: "Wine Director",
-        text: "This is Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facilis veritatis ex voluptatibus vel alias odio quia. Molestias, aspernatur! Quidem molestiae laudantium accusamus dolorum.",
+        text: "Bold, refined, and trustworthy, when it comes to wine distribution, they are the best",
         image: img1,
     },
     {
         name: "Michael Stone",
         role: "Sommelier",
-        text: "Possimus veritatis, excepturi sequi repellendus ab beatae repudiandae quasi a voluptates ea, doloremque, adipisci est fugit.",
+        text: "Modern, elegant, and eyecatching wines",
         image: img2,
     },
     {

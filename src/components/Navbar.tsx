@@ -1,7 +1,9 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import logo from "../../public/assets/hero/logo.jpg";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,19 +19,21 @@ export default function Navbar() {
                         </div>
                     </Link>
 
+
+
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         <Link href="#home" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             Home
                         </Link>
-                        <Link href="#story" className="text-text-light hover:text-wine-accent transition-colors duration-300">
-                            Our Story
+                        <Link href="#about" className="text-text-light hover:text-wine-accent transition-colors duration-300">
+                            About us
                         </Link>
                         <Link href="#collection" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             Collection
                         </Link>
-                        <Link href="#partners" className="text-text-light hover:text-wine-accent transition-colors duration-300">
-                            Partners
+                        <Link href="#blogs" className="text-text-light hover:text-wine-accent transition-colors duration-300">
+                            Blogs
                         </Link>
                         <Link
                             href="#contact"
@@ -57,19 +61,19 @@ export default function Navbar() {
 
             {/* Mobile menu */}
             {isOpen && (
-                <div className="md:hidden bg-bg-darker/95 backdrop-blur-lg border-t border-wine-primary/20">
+                <div className="md:hidden bg-bg-darker/95 backdrop-blur-lg border-t border-wine-primary/20 h-[100vh]">
                     <div className="px-2 pt-2 pb-3 space-y-1">
                         <Link href="#home" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Home
                         </Link>
-                        <Link href="#story" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
-                            Our Story
+                        <Link href="#about" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                            About us
                         </Link>
                         <Link href="#collection" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Collection
                         </Link>
-                        <Link href="#partners" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
-                            Partners
+                        <Link href="#blogs" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                            Blogs
                         </Link>
                         <Link href="#contact" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Contact

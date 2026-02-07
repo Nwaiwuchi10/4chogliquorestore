@@ -5,7 +5,7 @@ export default function Footer() {
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     {/* Brand */}
                     <div className="md:col-span-1">
-                        <div className="text-3xl font-serif font-bold text-wine-accent mb-4">VINO</div>
+                        <div className="text-3xl font-serif font-bold text-wine-accent mb-4">4CHOG Liquors</div>
                         <p className="text-text-light/60 text-sm">
                             Elevating the art of wine distribution since 1968.
                         </p>
@@ -53,8 +53,9 @@ export default function Footer() {
                     <div id="contact">
                         <h4 className="text-text-light font-semibold mb-4">Contact</h4>
                         <ul className="space-y-2 text-sm text-text-light/60">
-                            <li>contact@vinoDistrib.com</li>
-                            <li>+1 (555) 123-4567</li>
+                            <li>4chogliquorstore@gmail.com</li>
+
+                            <li>+2349028219263</li>
                             <li className="pt-4">
                                 <div className="flex space-x-4">
                                     <a href="#" className="hover:text-wine-accent transition-colors">

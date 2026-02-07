@@ -13,7 +13,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center space-x-2">
                         <div className="text-2xl font-serif font-bold text-wine-accent">
-                            VINO
+                            4CHOG Liquors
                         </div>
                     </Link>
 

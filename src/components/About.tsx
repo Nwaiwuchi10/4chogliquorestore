@@ -1,3 +1,5 @@
+import Image from "next/image";
+import vineyardImg from "../../public/assets/hero/vineyard.png";
 export default function About() {
     return (
         <section id="story" className="py-24 px-4 sm:px-6 lg:px-8 bg-bg-darker relative overflow-hidden">
@@ -50,16 +52,18 @@ export default function About() {
                     {/* Image placeholder */}
                     <div className="relative h-[500px] rounded-lg overflow-hidden group">
                         <div className="absolute inset-0 bg-gradient-to-br from-wine-primary via-wine-secondary to-bg-darker opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
-                        <div className="absolute inset-0 flex items-center justify-center">
-                            <div className="text-center space-y-4">
-                                <svg className="w-24 h-24 mx-auto text-wine-accent/50" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L11 4.323V3a1 1 0 011-1h-2z" />
-                                </svg>
-                                <p className="text-text-light/40 text-sm italic">Vineyard Image Placeholder</p>
-                            </div>
+                        <div className="absolute inset-0">
+                            <Image
+                                src={vineyardImg}
+                                alt="Vineyard and wine barrels"
+                                fill
+                                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                                priority
+                            />
                         </div>
+
                         {/* Decorative border */}
-                        <div className="absolute inset-0 border-2 border-wine-accent/20 group-hover:border-wine-accent/40 transition-all duration-500"></div>
+                        <div className="absolute inset-0  group-hover:border-wine-accent/40 transition-all duration-500"></div>
                     </div>
                 </div>
             </div>

@@ -7,6 +7,8 @@ import FeaturedGallery from "@/components/Featuredgalley";
 import WineCategorySlider from "@/components/WinecategorySlider";
 import HandPickedSection from "@/components/Handpicksection";
 import ContactUsSection from "@/components/Contactus";
+import LatestBlogSection from "@/components/LatestBlog";
+import CustomerReviewSection from "@/components/CustomerReviews";
 
 
 export default function Home() {
@@ -20,6 +22,8 @@ export default function Home() {
                 <HandPickedSection />
                 <About />
                 <Featured />
+                <CustomerReviewSection />
+                <LatestBlogSection />
                 <ContactUsSection />
             </main>
             <Footer />

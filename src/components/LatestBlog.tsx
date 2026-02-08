@@ -62,7 +62,8 @@ export default function LatestBlogSection() {
                             generated incremental regional sales.
                         </p>
                         <button className="mt-6 text-yellow-400 text-sm font-semibold hover:underline w-fit">
-                            Read More
+                            <a href="/about">Read More</a>
+
                         </button>
                     </div>
 
@@ -86,7 +87,7 @@ export default function LatestBlogSection() {
                                 broadened brand availability
                             </p>
                             <button className="mt-4 text-yellow-400 text-sm font-semibold hover:underline">
-                                Read More
+                                <a href="/about">Read More</a>
                             </button>
                         </div>
                     </div>

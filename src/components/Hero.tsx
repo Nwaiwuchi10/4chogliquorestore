@@ -143,7 +143,7 @@ export default function HeroSwiper() {
                                             <a href="#contact"> {slide.button}</a>
                                         </button>
                                         <button className="px-8 py-4 bg-transparent border border-white/30 text-white hover:bg-white hover:text-black transition-all duration-300 rounded-sm font-medium tracking-wide uppercase text-sm backdrop-blur-sm">
-                                            <a href="#about" className="decoration-none">Our Story</a>
+                                            <a href="/about" className="decoration-none">Our Story</a>
                                         </button>
                                     </div>
                                 </div>

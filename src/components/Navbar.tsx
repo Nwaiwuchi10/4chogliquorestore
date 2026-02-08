@@ -85,7 +85,7 @@ export default function Navbar() {
                         <a
                             href="/4CHOGLiguorsPortfolio.pdf"   // file must be in /public
                             download
-                            className="text-text-light hover:text-wine-accent transition-colors duration-300 cursor-pointer"
+                            className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors duration-300 cursor-pointer"
                         >
                             Portfolio
                         </a>

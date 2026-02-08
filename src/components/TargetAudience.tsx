@@ -24,8 +24,9 @@ export default function TargetAudience() {
                         />
                         <div className="absolute bottom-8 left-8 right-8 z-20 border-l-4 border-wine-accent pl-6">
                             <p className="text-white text-xl font-serif italic">
-                                "Curating exclusive experiences for those who appreciate the finer things in life."
+                                &ldquo;Curating exclusive experiences for those who appreciate the finer things in life.&rdquo;
                             </p>
+
                         </div>
                     </div>
 

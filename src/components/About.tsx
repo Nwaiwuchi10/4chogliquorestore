@@ -11,7 +11,7 @@ export default function About() {
                     {/* Text content */}
                     <div className="space-y-6">
                         <div className="inline-block">
-                            <span className="text-wine-accent font-medium text-sm tracking-widest uppercase">Our Heritage</span>
+                            <span className="text-wine-accent font-medium text-sm tracking-widest uppercase">About Us</span>
                             <div className="h-0.5 w-20 bg-wine-accent mt-2"></div>
                         </div>
 

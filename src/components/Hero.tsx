@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -34,6 +35,32 @@ const slides = [
 ];
 
 export default function HeroSwiper() {
+    const slogan = "Where Authentic Taste Meets Timeless Luxury";
+    const [displayText, setDisplayText] = useState("");
+    const [index, setIndex] = useState(0);
+
+    useEffect(() => {
+        const typingSpeed = 80; // ms per letter
+        const resetDelay = 2000; // pause before restart
+
+        if (index < slogan.length) {
+            const timeout = setTimeout(() => {
+                setDisplayText((prev) => prev + slogan[index]);
+                setIndex(index + 1);
+            }, typingSpeed);
+
+            return () => clearTimeout(timeout);
+        } else {
+            // Restart typing after full sentence
+            const resetTimeout = setTimeout(() => {
+                setDisplayText("");
+                setIndex(0);
+            }, resetDelay);
+
+            return () => clearTimeout(resetTimeout);
+        }
+    }, [index]);
+
     const phoneNumber = "09028219263";
     const WhatsappClick = () => {
         const url = `https://wa.me/${phoneNumber}`;
@@ -96,11 +123,20 @@ export default function HeroSwiper() {
 
                                     {/* Description (Optional) */}
                                     <p className="text-gray-300 text-lg md:text-xl max-w-lg font-lighter leading-relaxed border-l-2 border-white/20 pl-6">
-                                        Experience the finest curation of premium vintages and rare spirits, delivered with elegance.
+                                        4CHOG LIQUORS
+                                        PREMIUM IMPORTED
+                                        WINES & SPIRITS.
                                     </p>
-                                    <p className="text-gray-300 text-lg md:text-xl max-w-lg font-lighter  pl-6">Retail &
+                                    {/* <p className="text-gray-300 text-lg md:text-xl max-w-lg font-lighter  pl-6">Retail &
                                         Distribution Of Imported Wines And
-                                        Spirits</p>
+                                        Spirits</p> */}
+
+                                    <p className="text-wine-accent text-lg md:text-xl max-w-lg font-light pl-6 h-[32px] tracking-wide">
+                                        <span className="border-r-2 border-wine-accent pr-1 animate-pulse">
+                                            {displayText}
+                                        </span>
+                                    </p>
+
                                     {/* Buttons */}
                                     <div className="flex flex-wrap gap-4 pt-4">
                                         <button className="px-8 py-4 bg-wine-primary hover:bg-wine-secondary text-white transition-all duration-300 rounded-sm font-medium tracking-wide border border-transparent hover:border-wine-accent/50 shadow-lg hover:shadow-wine-primary/40 uppercase text-sm">

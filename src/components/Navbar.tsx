@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import logo from "../../public/assets/hero/log.png";
 
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -31,9 +32,16 @@ export default function Navbar() {
                         <Link href="#home" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             Home
                         </Link>
-                        <Link href="#about" className="text-text-light hover:text-wine-accent transition-colors duration-300">
+                        <Link href="/about" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             About us
                         </Link>
+                        <a
+                            href="/4CHOGLiguorsPortfolio.pdf"   // file must be in /public
+                            download
+                            className="text-text-light hover:text-wine-accent transition-colors duration-300 cursor-pointer"
+                        >
+                            Portfolio
+                        </a>
                         <Link href="#collection" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             Collection
                         </Link>
@@ -71,9 +79,16 @@ export default function Navbar() {
                         <Link href="#home" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Home
                         </Link>
-                        <Link href="#about" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                        <Link href="/about" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             About us
                         </Link>
+                        <a
+                            href="/4CHOGLiguorsPortfolio.pdf"   // file must be in /public
+                            download
+                            className="text-text-light hover:text-wine-accent transition-colors duration-300 cursor-pointer"
+                        >
+                            Portfolio
+                        </a>
                         <Link href="#collection" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Collection
                         </Link>

@@ -19,8 +19,9 @@ export default function Home() {
                 <Hero />
                 <FeaturedGallery />
                 <WineCategorySlider />
-                <HandPickedSection />
                 <About />
+                <HandPickedSection />
+
                 <Featured />
                 <CustomerReviewSection />
                 <LatestBlogSection />

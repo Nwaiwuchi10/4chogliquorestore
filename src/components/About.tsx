@@ -16,7 +16,7 @@ export default function About() {
                         </div>
 
                         <h2 className="text-4xl lg:text-5xl font-serif font-bold text-text-light leading-tight">
-                            Three Generations of
+                            Generations of
                             <span className="text-wine-accent"> Excellence</span>
                         </h2>
 

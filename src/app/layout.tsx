@@ -16,6 +16,9 @@ const inter = Inter({
 export const metadata: Metadata = {
     title: " 4CHOG Liquors",
     description: "Elevating the art of wine distribution with curated selections from the world's finest vineyards.",
+    icons: {
+        icon: '/favicon.ico',
+    },
 };
 
 export default function RootLayout({

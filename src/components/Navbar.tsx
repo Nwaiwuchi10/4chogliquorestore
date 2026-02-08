@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import logo from "../../public/assets/hero/logo.jpg";
+import logo from "../../public/assets/hero/log.png";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +13,15 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center space-x-2">
-                        <div className="text-2xl font-serif font-bold text-wine-accent">
-                            4CHOG Liquors
-                        </div>
+                    <Link href="/" className="flex items-center h-full">
+                        <Image
+                            src={logo}
+                            alt="4CHOG Liquors Logo"
+                            width={120}     // give it a real base size
+                            height={120}
+                            priority
+                            className="h-auto w-auto object-contain pt-32 -mt-[45px]"
+                        />
                     </Link>
 
 

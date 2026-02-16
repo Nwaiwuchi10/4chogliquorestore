@@ -29,11 +29,14 @@ export default function Navbar() {
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
-                        <Link href="#home" className="text-text-light hover:text-wine-accent transition-colors duration-300">
+                        <Link href="/#home" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             Home
                         </Link>
                         <Link href="/about" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             About us
+                        </Link>
+                        <Link href="/gallery" className="text-text-light hover:text-wine-accent transition-colors duration-300">
+                            Gallery
                         </Link>
                         <a
                             href="/4CHOGLiguorsPortfolio.pdf"   // file must be in /public
@@ -42,14 +45,14 @@ export default function Navbar() {
                         >
                             Portfolio
                         </a>
-                        <Link href="#collection" className="text-text-light hover:text-wine-accent transition-colors duration-300">
+                        <Link href="/#collection" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             Collection
                         </Link>
-                        <Link href="#blogs" className="text-text-light hover:text-wine-accent transition-colors duration-300">
+                        <Link href="/#blogs" className="text-text-light hover:text-wine-accent transition-colors duration-300">
                             Blogs
                         </Link>
                         <Link
-                            href="#contact"
+                            href="/#contact"
                             className="px-6 py-2 bg-wine-primary hover:bg-wine-secondary transition-colors duration-300 rounded-md text-text-light font-medium"
                         >
                             Contact
@@ -76,11 +79,14 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-bg-darker/95 backdrop-blur-lg border-t border-wine-primary/20 h-[100vh]">
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                        <Link href="#home" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                        <Link href="/#home" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Home
                         </Link>
                         <Link href="/about" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             About us
+                        </Link>
+                        <Link href="/gallery" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                            Gallery
                         </Link>
                         <a
                             href="/4CHOGLiguorsPortfolio.pdf"   // file must be in /public
@@ -89,13 +95,13 @@ export default function Navbar() {
                         >
                             Portfolio
                         </a>
-                        <Link href="#collection" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                        <Link href="/#collection" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Collection
                         </Link>
-                        <Link href="#blogs" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                        <Link href="/#blogs" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Blogs
                         </Link>
-                        <Link href="#contact" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
+                        <Link href="/#contact" className="block px-3 py-2 text-text-light hover:text-wine-accent transition-colors">
                             Contact
                         </Link>
                     </div>

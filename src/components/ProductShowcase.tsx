@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { ThumbsUp, Heart, Eye } from "lucide-react";
 import { useState } from "react";
-import img1 from "../../public/assets/hero/glend.png"
-import img2 from "../../public/assets/hero/hj.png"
-import img3 from "../../public/assets/hero/sg.png"
-import img4 from "../../public/assets/hero/hej.png"
+import img1 from "../../public/assets/hero/gallery2.jpeg"
+import img2 from "../../public/assets/hero/gallery16.jpeg"
+import img3 from "../../public/assets/hero/gallery19.jpeg"
+import img4 from "../../public/assets/hero/gallery22.jpeg"
 
 const products = [
     {

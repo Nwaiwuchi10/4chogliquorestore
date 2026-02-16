@@ -47,7 +47,7 @@ const HandPickedSection = () => {
                         className="mt-8 px-8 py-3 border border-white text-sm tracking-widest
                        hover:bg-white hover:text-black transition-all duration-300"
                     >
-                        <a href="#contact" > SHOP NOW</a>
+                        <a href="/gallery" > SHOP NOW</a>
                     </button>
                 </div>
             </div>

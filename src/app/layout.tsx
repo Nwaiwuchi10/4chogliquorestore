@@ -3,36 +3,38 @@ import { Cinzel, Inter } from "next/font/google";
 import "./globals.css";
 
 const cinzel = Cinzel({
-    subsets: ["latin"],
-    variable: "--font-cinzel",
-    weight: ["400", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-cinzel",
+  weight: ["400", "600", "700"],
 });
 
 const inter = Inter({
-    subsets: ["latin"],
-    variable: "--font-inter",
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-    title: " 4CHOG Liquors",
-    description: "Elevating the art of wine distribution with curated selections from the world's finest vineyards.",
-    icons: {
-        icon: '/favicon.ico',
-    },
+  title: "4chog Liquor",
+  description:
+    "Elevating the art of wine distribution with curated selections from the world's finest vineyards.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  verification: {
+    google: "4nWkCpbLLDbOb9Yw5DScxx1747hdoTFYCMXoKhs5uXw",
+  },
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body
-                className={`${cinzel.variable} ${inter.variable} antialiased`}
-            >
-                {children}
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body className={`${cinzel.variable} ${inter.variable} antialiased`}>
+        {children}
+      </body>
+    </html>
+  );
 }

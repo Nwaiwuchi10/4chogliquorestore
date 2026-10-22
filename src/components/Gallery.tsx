@@ -4,63 +4,118 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
-import gallery1 from "../../public/assets/hero/gallery1.jpeg"
-import gallery2 from "../../public/assets/hero/gallery2.jpeg"
 import gallery3 from "../../public/assets/hero/gallery3.jpeg"
-import gallery4 from "../../public/assets/hero/gallery4.jpeg"
-import gallery5 from "../../public/assets/hero/gallery5.jpeg"
-import gallery6 from "../../public/assets/hero/gallery6.jpeg"
-import gallery7 from "../../public/assets/hero/gallery7.jpeg"
-import gallery8 from "../../public/assets/hero/gallery8.jpeg"
-import gallery9 from "../../public/assets/hero/gallery9.jpeg"
 import gallery10 from "../../public/assets/hero/gallery10.jpeg"
 import gallery11 from "../../public/assets/hero/gallery11.jpeg"
 import gallery12 from "../../public/assets/hero/gallery12.jpeg"
 import gallery13 from "../../public/assets/hero/gallery13.jpeg"
 import gallery14 from "../../public/assets/hero/gallery14.jpeg"
-import gallery15 from "../../public/assets/hero/gallery15.jpeg"
-import gallery16 from "../../public/assets/hero/gallery16.jpeg"
-import gallery17 from "../../public/assets/hero/gallery17.jpeg"
-import gallery18 from "../../public/assets/hero/gallery18.jpeg"
-import gallery19 from "../../public/assets/hero/gallery19.jpeg"
 import gallery20 from "../../public/assets/hero/gallery20.jpeg"
-import gallery21 from "../../public/assets/hero/gallery21.jpeg"
-import gallery22 from "../../public/assets/hero/gallery22.jpeg"
+import singletonWhisky from '../assets/newWines/IMG-20261012-WA0054.jpg'
+import amorneroRosato from '../assets/newWines/IMG-20261012-WA0055.jpg'
+import maslaurisLuberon from '../assets/newWines/IMG-20261012-WA0056.jpg'
+import stGermain from '../assets/newWines/IMG-20261012-WA0060(1).jpg'
+import devesaRose from '../assets/newWines/IMG-20261012-WA0062.jpg'
+import whiteWine from '../assets/newWines/IMG-20261012-WA0063 (1).jpg'
+import martiniRosso from '../assets/newWines/IMG-20261012-WA0064(1).jpg'
+import remyMartin from '../assets/newWines/IMG-20261012-WA0066.jpg'
+import cognacVS from '../assets/newWines/IMG-20261012-WA0067.jpg'
+import tequila1800 from '../assets/newWines/IMG-20261012-WA0071.jpg'
+import xoCognac from '../assets/newWines/IMG-20261012-WA0075.jpg'
+import blendedScotch from '../assets/newWines/IMG-20261012-WA0076.jpg'
+import amorneroRed from '../assets/newWines/IMG-20261012-WA0082.jpg'
+import sambuca from '../assets/newWines/IMG-20261012-WA0085.jpg'
+import cruzTequila from '../assets/newWines/IMG-20261012-WA0093.jpg'
+import celeneSparkling from '../assets/newWines/IMG-20261012-WA0109.jpg'
+import prosecco from '../assets/newWines/IMG-20261012-WA0063.jpg'
+import greenTeaLiqueur from '../assets/newWines/IMG-20261012-WA0073.jpg'
+import blendedScotchReserve from '../assets/newWines/IMG-20261012-WA0076 (1).jpg'
+import sparklingWine from '../assets/newWines/IMG-20261012-WA0078.jpg'
+import celeneWhite from '../assets/newWines/IMG-20261012-WA0110.jpg'
+import teelingWhisky from '../assets/newWines/IMG-20261012-WA0092.jpg'
+import cotswoldsWhisky from '../assets/newWines/IMG-20261012-WA0094.jpg'
+import glenfiddichFifteenBox from '../assets/newWines/IMG-20261012-WA0095 (1).jpg'
+import glenfiddichFifteen from '../assets/newWines/IMG-20261012-WA0095.jpg'
+import blendedWhisky from '../assets/newWines/IMG-20261012-WA0100.jpg'
+import devesaPortTwenty from '../assets/newWines/IMG-20261012-WA0106.jpg'
+import martellVS from '../assets/newWines/IMG-20261012-WA0108.jpg'
+import devesaPortLBV from '../assets/newWines/IMG-20261012-WA0111.jpg'
+import barbieriBitter from '../assets/newWines/IMG-20261012-WA0114.jpg'
+import jackDaniels from '../assets/newWines/IMG-20261012-WA0118.jpg'
+import campari from '../assets/newWines/IMG-20261012-WA0126.jpg'
+import devesaPortTen from '../assets/newWines/IMG-20261012-WA0130.jpg'
+import tequilaCocktailPack from '../assets/newWines/IMG-20261012-WA0132.jpg'
+import tequilaBottle from '../assets/newWines/IMG-20261012-WA0134.jpg'
+import grantsWhisky from '../assets/newWines/IMG-20261012-WA0139.jpg'
+import cognacBottle from '../assets/newWines/IMG-20261012-WA0141.jpg'
+import pinnacleVodka from '../assets/newWines/IMG-20261012-WA0142.jpg'
+import jamesonReserveBox from '../assets/newWines/IMG-20261012-WA0145 (1).jpg'
+import jamesonReserve from '../assets/newWines/IMG-20261012-WA0145.jpg'
+import johnnieWalkerGold from '../assets/newWines/IMG-20261012-WA0148.jpg'
+import johnnieWalkerBlue from '../assets/newWines/IMG-20261012-WA0150.jpg'
+import mountAngels from '../assets/newWines/IMG-20261012-WA0155.jpg'
 
 
 const galleryImages = [
-    { id: 1, src: gallery1, alt: 'Fine Red Wine', category: 'Red Wine' },
-    { id: 2, src: gallery2, alt: 'Vineyard Sunset', category: 'Vineyard' },
-    { id: 3, src: gallery3, alt: 'White Wine Collection', category: 'White Wine' },
-    { id: 4, src: gallery4, alt: 'Champagne Toast', category: 'Sparkling' },
-    { id: 5, src: gallery5, alt: 'Wine Barrels', category: 'Storage' },
-    { id: 6, src: gallery6, alt: 'Wine Tasting Class', category: 'Events' },
-    { id: 7, src: gallery7, alt: 'Rose Wine Glass', category: 'Rose' },
-    { id: 8, src: gallery8, alt: 'Grapes in Vineyard', category: 'Harvest' },
-    { id: 9, src: gallery9, alt: 'Wine Cellar Decor', category: 'Storage' },
-    { id: 10, src: gallery10, alt: 'Cocktail Mixing', category: 'Liquors' },
-    { id: 11, src: gallery11, alt: 'Boutique Liquor Bottle', category: 'Liquors' },
-    { id: 12, src: gallery12, alt: 'Aged Whiskey', category: 'Liquors' },
-    { id: 13, src: gallery13, alt: 'Wine and Cheese', category: 'Red Wine' },
-    { id: 14, src: gallery14, alt: 'Sunny Vineyard', category: 'Vineyard' },
-    { id: 15, src: gallery15, alt: 'Pouring Red Wine', category: 'Red Wine' },
-    { id: 16, src: gallery16, alt: 'Luxury Wine Store', category: 'Events' },
-    { id: 17, src: gallery17, alt: 'Vintage Casks', category: 'Storage' },
-    { id: 18, src: gallery18, alt: 'Classic Martini', category: 'Liquors' },
-    { id: 19, src: gallery19, alt: 'Social Gathering', category: 'Events' },
-    { id: 20, src: gallery20, alt: 'Crystal Wine Glasses', category: 'Red Wine' },
-    { id: 21, src: gallery21, alt: 'Wine Selection', category: 'Red Wine' },
-    { id: 22, src: gallery22, alt: 'Wine Celebration', category: 'Events' },
-    { id: 23, src: gallery20, alt: 'Decanting Wine', category: 'Red Wine' },
-    { id: 24, src: gallery6, alt: 'Liquor Collection', category: 'Liquors' },
-    { id: 25, src: gallery10, alt: 'Night Vineyard', category: 'Vineyard' },
-    { id: 26, src: gallery11, alt: 'Sparkling Wine', category: 'Sparkling' },
-    { id: 27, src: gallery14, alt: 'Evening Party', category: 'Events' },
+    { id: 1, src: singletonWhisky, alt: 'The Singleton 12 Year Old Single Malt Scotch Whisky', category: 'Liquors' },
+    { id: 2, src: amorneroRosato, alt: 'Amornero Puglia Rosato', category: 'Rose' },
+    { id: 3, src: gallery3, alt: 'People at a wine exhibition', category: 'Events' },
+    { id: 4, src: maslaurisLuberon, alt: 'Les Terres de Maslauris Luberon 2025', category: 'White Wine' },
+    { id: 5, src: stGermain, alt: 'St-Germain Elderflower Liqueur', category: 'Liquors' },
+    { id: 6, src: devesaRose, alt: 'Devesa Rosé', category: 'Rose' },
+    { id: 7, src: whiteWine, alt: 'White wine bottle', category: 'White Wine' },
+    { id: 8, src: martiniRosso, alt: 'Martini Rosso vermouth', category: 'Liquors' },
+    { id: 9, src: remyMartin, alt: 'Rémy Martin 1738 cognac', category: 'Liquors' },
+    { id: 10, src: gallery10, alt: 'Visitors at a wine exhibition', category: 'Events' },
+    { id: 11, src: gallery11, alt: 'Visitor at a wine exhibition', category: 'Events' },
+    { id: 12, src: gallery12, alt: 'Visitor at a wine exhibition', category: 'Events' },
+    { id: 13, src: gallery13, alt: 'People at a wine exhibition', category: 'Events' },
+    { id: 14, src: gallery14, alt: 'People at a wine exhibition', category: 'Events' },
+    { id: 15, src: cognacVS, alt: 'Premium VS cognac', category: 'Liquors' },
+    { id: 16, src: tequila1800, alt: '1800 Tequila', category: 'Liquors' },
+    { id: 17, src: xoCognac, alt: 'Premium XO cognac', category: 'Liquors' },
+    { id: 18, src: blendedScotch, alt: 'Premium blended Scotch whisky', category: 'Liquors' },
+    { id: 19, src: celeneSparkling, alt: 'Célène sparkling wine', category: 'Sparkling' },
+    { id: 20, src: gallery20, alt: 'People at a wine exhibition', category: 'Events' },
+    { id: 21, src: amorneroRed, alt: 'Amornero Puglia wine', category: 'Red Wine' },
+    { id: 22, src: cruzTequila, alt: 'Premium tequila', category: 'Liquors' },
+    { id: 23, src: gallery20, alt: 'People at a wine exhibition', category: 'Events' },
+    { id: 24, src: sambuca, alt: 'Sambuca liqueur', category: 'Liquors' },
+    { id: 25, src: gallery10, alt: 'Visitors at a wine exhibition', category: 'Events' },
+    { id: 26, src: gallery11, alt: 'Visitor at a wine exhibition', category: 'Events' },
+    { id: 27, src: gallery14, alt: 'People at a wine exhibition', category: 'Events' },
+    { id: 28, src: prosecco, alt: 'Italian Prosecco sparkling wine', category: 'Sparkling' },
+    { id: 29, src: greenTeaLiqueur, alt: 'Green & Green liqueur', category: 'Liquors' },
+    { id: 30, src: blendedScotchReserve, alt: 'Blended Scotch whisky', category: 'Liquors' },
+    { id: 31, src: sparklingWine, alt: 'Premium sparkling wine', category: 'Sparkling' },
+    { id: 32, src: teelingWhisky, alt: 'Teeling Irish whiskey', category: 'Liquors' },
+    { id: 33, src: cotswoldsWhisky, alt: 'Cotswolds single malt whisky', category: 'Liquors' },
+    { id: 34, src: glenfiddichFifteenBox, alt: 'Glenfiddich 15 year old whisky gift box', category: 'Liquors' },
+    { id: 35, src: glenfiddichFifteen, alt: 'Glenfiddich 15 year old whisky', category: 'Liquors' },
+    { id: 36, src: blendedWhisky, alt: 'Premium blended whisky', category: 'Liquors' },
+    { id: 37, src: devesaPortTwenty, alt: 'Quinta da Devesa 20 year old Port', category: 'Liquors' },
+    { id: 38, src: martellVS, alt: 'Martell VS cognac', category: 'Liquors' },
+    { id: 39, src: devesaPortLBV, alt: 'Quinta da Devesa Late Bottled Vintage Port', category: 'Liquors' },
+    { id: 40, src: barbieriBitter, alt: 'Barbieri bitter aperitif', category: 'Liquors' },
+    { id: 41, src: jackDaniels, alt: 'Jack Daniel’s Tennessee whiskey', category: 'Liquors' },
+    { id: 42, src: campari, alt: 'Campari aperitif', category: 'Liquors' },
+    { id: 43, src: devesaPortTen, alt: 'Quinta da Devesa 10 year old Port', category: 'Liquors' },
+    { id: 44, src: tequilaCocktailPack, alt: 'Tequila cocktail variety pack', category: 'Liquors' },
+    { id: 45, src: tequilaBottle, alt: 'Premium tequila bottle', category: 'Liquors' },
+    { id: 46, src: grantsWhisky, alt: 'Grant’s blended Scotch whisky', category: 'Liquors' },
+    { id: 47, src: cognacBottle, alt: 'Premium cognac', category: 'Liquors' },
+    { id: 48, src: pinnacleVodka, alt: 'Pinnacle vodka', category: 'Liquors' },
+    { id: 49, src: jamesonReserveBox, alt: 'Jameson Irish whiskey gift box', category: 'Liquors' },
+    { id: 50, src: jamesonReserve, alt: 'Jameson Irish whiskey', category: 'Liquors' },
+    { id: 51, src: johnnieWalkerGold, alt: 'Johnnie Walker Gold Label whisky', category: 'Liquors' },
+    { id: 52, src: johnnieWalkerBlue, alt: 'Johnnie Walker Blue Label whisky', category: 'Liquors' },
+    { id: 53, src: mountAngels, alt: 'Mount Angels liqueur', category: 'Liquors' },
+    { id: 54, src: celeneWhite, alt: 'Célène white wine', category: 'White Wine' },
 ];
 
 export default function Gallery() {
     const [activeFilter, setActiveFilter] = useState('All');
-    const categories = ['All', 'Red Wine', 'White Wine', 'Sparkling', 'Liquors', 'Vineyard', 'Events'];
+    const categories = ['All', ...new Set(galleryImages.map((image) => image.category))];
 
     const filteredImages = activeFilter === 'All'
         ? galleryImages

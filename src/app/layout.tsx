@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "Elevating the art of wine distribution with curated selections from the world's finest vineyards.",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/assets/hero/log.png",
   },
   verification: {
     google: "4nWkCpbLLDbOb9Yw5DScxx1747hdoTFYCMXoKhs5uXw",
